@@ -3,7 +3,7 @@ arr = [12, 22, 4, 23, 13, 14, 2016]
 def bubble_sort(arr):
     last_item = len(arr) - 1
     for i in range(0, last_item):
-        for item in range(0, last_item-i):
+        for item in range(i, last_item):
             print(arr)
             if arr[item] > arr[item+1]:
                 arr[item], arr[item +1] = arr[item+1], arr[item]
